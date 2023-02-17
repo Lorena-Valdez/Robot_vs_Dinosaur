@@ -3,6 +3,9 @@ class Dinosaur:
         self.name = name
         self.attack_power = attack_power
         self.health = health
+        pass
 
     def attack (self,robot):
-       pass
+        robot.health -= self.attack_power
+        print(f'{robot.name} was attacked by {self.name} for {self.attack_power.active_weapon} Damage leaving {robot.name} with {robot.health} health remaining ')
+        pass
