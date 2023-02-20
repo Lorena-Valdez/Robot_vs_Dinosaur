@@ -5,7 +5,7 @@ from robot import Robot
 class Battlefield:
     def __init__(self):
         self.robot = Robot("Richard",100)
-        self.dinosaur = Dinosaur("Humphrey",25,100)
+        self.dinosaur = Dinosaur("Humphrey",18,100)
         pass
 
     def run_game (self):
@@ -18,28 +18,15 @@ class Battlefield:
         pass
            
     def battle_phase (self):
-        while self.robot.health > 0 and self.dinosaur.health >0:
+        while self.robot.health > 0 and self.dinosaur.health > 0:
             self.robot.attack(self.dinosaur)
             self.dinosaur.attack(self.robot)
-        pass
-             
-    
-    
-      #after testing both attacks try using a while loop to get them
-      # to continue attacking until their health drops below 0
-      #testing our attacks
-    #   # self.robot.attack(self.dinosaur)
-    # self.health = health
-    #   if health > 0:
-    #     print ("Attack!")
-    #   elif health < 0
-    #     print ("Surrender!")
-    #   break
+        
+        if self.dinosaur.health >= 0:
+            print (f"What was Robot thinking?! {self.dinosaur.name} is the winner!")
+        elif self.robot.health >= 0:
+            print (f"What was that dinosaur thinking?! {self.robot.name} is the winner!")
+       
 
-
-
-      #build and test dino attack
-
-    def display_winner (self):
-        print ("\nWhat was Robot thinking?! Dino is the winner!\n")
-        print ("\nSilly Dino thought it could best a machine?! Robot is the winner!")
+# # if loop robot/dino health greater than zero etc etc
+#     def display_winner (self):
