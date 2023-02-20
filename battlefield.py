@@ -23,10 +23,8 @@ class Battlefield:
             self.dinosaur.attack(self.robot)
         
         if self.dinosaur.health >= 0:
-            print (f"What was Robot thinking?! {self.dinosaur.name} is the winner!")
+            print (f"What was Robot thinking?! {self.dinosaur.name} the dinosaur is the winner!")
         elif self.robot.health >= 0:
-            print (f"What was that dinosaur thinking?! {self.robot.name} is the winner!")
+            print (f"What was that dinosaur thinking?! {self.robot.name} the robot is the winner!")
        
 
-# # if loop robot/dino health greater than zero etc etc
-#     def display_winner (self):
