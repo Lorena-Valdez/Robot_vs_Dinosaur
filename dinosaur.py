@@ -7,5 +7,5 @@ class Dinosaur:
 
     def attack (self,robot):
         robot.health -= self.attack_power
-        print(f'{robot.name} was attacked by {self.name} for {self.attack_power.active_weapon} Damage leaving {robot.name} with {robot.health} health remaining ')
+        print(f'{robot.name} was attacked by {self.name} for {self.attack_power} Damage leaving {robot.name} with {robot.health} health remaining ')
         pass
